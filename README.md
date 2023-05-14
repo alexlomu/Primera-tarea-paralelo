@@ -5,12 +5,12 @@ El link de este repositorio es el siguiente: [GitHub](https://github.com/alexlom
 
 El código utilizado es el siguiente:
 
-def secuencial():
-    time = 0
-    for url in urls:
-        time += scrape(url)[1]
-    print("El tiempo total ha sido:",time,"segundos")
-    
+        def secuencial():
+            time = 0
+            for url in urls:
+                time += scrape(url)[1]
+            print("El tiempo total ha sido:",time,"segundos")
+
 Y el output recibido es:
 
 starting a.com
