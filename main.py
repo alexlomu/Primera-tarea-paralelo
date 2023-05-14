@@ -31,7 +31,7 @@ def multiprocesamiento():
     print("El tiempo total ha sido:",time_mult,"segundos")
 
 
-multiprocesamiento()
+
     
 
 
