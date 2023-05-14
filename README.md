@@ -24,3 +24,16 @@ Y el output recibido es:
         El tiempo total ha sido: 1.9000000000000001 segundos
 
 ## Hacer el trabajo con multiprocesos
+
+El código utilizado es el siguiente:
+
+        def multiprocesamiento():
+            initial_time = time.time()
+            pool = Pool(processes=4)
+            data = pool.map(scrape, urls)
+            pool.close()
+            pool.join()
+            for row in data:
+                print(row)
+            time_mult = time.time() - initial_time
+            print("El tiempo total ha sido:",time_mult,"segundos")
